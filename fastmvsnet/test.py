@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 import argparse
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "0" # to avert the error lazy wrapper should be called at most once at torch.inverse(R).
 import os.path as osp
 import logging
 import time

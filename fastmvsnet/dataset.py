@@ -264,7 +264,7 @@ class DTU_Test_Set(Dataset):
                 depth_images.append(depth_image)
         else:
             for depth_path in paths["view_depth_paths"]:
-                depth_images.append(np.zeros((self.height, self.width), np.float))
+                depth_images.append(np.zeros((self.height, self.width), float))
 
         ref_depth = depth_images[0].copy()
 
